@@ -11,6 +11,7 @@ std::condition_variable cv;
 int global = 1;
 
 
+
 void thread_func(bool even)
 {
 	while(global < 10){

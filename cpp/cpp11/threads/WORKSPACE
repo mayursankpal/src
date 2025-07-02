@@ -1,0 +1,14 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    # Google Test is a C++ testing framework.
+    # This is a specific version of Google Test (1.16.1).
+    name = "googletest",
+    urls = ["https://github.com/google/googletest/releases/download/v1.16.0/googletest-1.16.0.tar.gz"],
+    strip_prefix = "googletest-release-1.16.0",
+    # This is the commit hash for the specific version of Google Test.
+    # commit = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+    # This is the SHA256 checksum for the specific version of Google Test.
+    # sha256 = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+    # This is the URL for the specific version of Google Test.
+)
